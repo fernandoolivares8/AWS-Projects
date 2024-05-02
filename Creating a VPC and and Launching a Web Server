@@ -1,0 +1,21 @@
+# Creating a VPC and Launching a Web Server on AWS
+This project demonstrates the process of creating a Virtual Private Cloud (VPC) and launching a web server instance within that VPC on Amazon Web Services (AWS).
+
+## Project Overview
+
+This project demonstrates the process of creating a Virtual Private Cloud (VPC) with high availability and launching a web server instance within a public subnet on Amazon Web Services (AWS). The following steps are involved:
+
+1) **VPC and Subnet Creation**: The VPC Wizard is used to create a VPC, an internet gateway, and two public subnets in one Availability Zone. Two additional private subnets are then created in a separate Availability Zone for high availability.
+
+2) **Route Table Configuration**: Route tables are configured to ensure proper routing for both public and private subnets. This allows internet access for the public subnet and restricts it for the private subnet.
+
+3) **Security Group Creation**: A security group is created to act as a virtual firewall, controlling inbound and outbound traffic to the web server instance.
+
+4) **Web Server Instance Launch**: An EC2 instance is launched within the public subnet and configured to serve a basic web page.
+
+
+
+**Technologies Used**
+
+* Amazon VPC
+* Amazon EC2
